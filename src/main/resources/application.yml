@@ -22,7 +22,7 @@ spring:
     active: prod
 
 
-## logging configuration
+## logging configurations
 logging:
   level:
     root: info
