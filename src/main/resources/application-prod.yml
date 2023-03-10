@@ -1,0 +1,39 @@
+## servlet configuration
+server:
+  port: ${PORT:5000}
+
+## eureka server configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://ignitediscovery-env.eba-77absjbd.us-east-1.elasticbeanstalk.com/eureka}
+
+## application configuration
+spring:
+  application:
+    name: ${APPLICATION_NAME:ignite-api-gateway-service}
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+
+## logging configuration
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        cloud:
+          gateway:
+            route:
+              RouteDefinitionLocator: info
+
+## cors configuration
+accessControl:
+  allowedOrigins: ${ALLOWED_ORIGINS:*}
+  allowedMethods: ${ALLOWED_METHODS:GET, POST, PUT, PATCH, DELETE, OPTIONS}
+  maxAge: ${MAX_AGE:3600}
+  allowedHeaders: ${ALLOWED_HEADERS:*}
