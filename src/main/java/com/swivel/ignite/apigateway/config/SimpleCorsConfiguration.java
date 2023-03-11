@@ -10,6 +10,9 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 import java.util.Arrays;
 import java.util.Collections;
 
+/**
+ * Cors Configuration
+ */
 @Configuration
 public class SimpleCorsConfiguration extends CorsConfiguration {
 

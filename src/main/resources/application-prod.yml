@@ -14,9 +14,6 @@ spring:
     name: ${APPLICATION_NAME:ignite-api-gateway-service}
   cloud:
     gateway:
-      httpclient:
-        connect-timeout: 100000
-        response-timeout: 100000
       discovery:
         locator:
           enabled: true
