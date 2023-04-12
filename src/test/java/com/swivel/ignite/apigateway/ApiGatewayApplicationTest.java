@@ -13,7 +13,7 @@ class ApiGatewayApplicationTest {
 
     /**
      * This method tests Spring application main run method
-//     */
+     */
     @Test
     void Should_RunSpringApplication() {
         ApiGatewayApplication.main(new String[]{});
