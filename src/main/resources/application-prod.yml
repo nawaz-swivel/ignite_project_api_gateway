@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_SERVER_URL:http://52.91.61.36:8761/eureka}
+      defaultZone: ${EUREKA_SERVER_URL:http://54.89.255.81:8761/eureka}
 
 ## application configuration
 spring:
